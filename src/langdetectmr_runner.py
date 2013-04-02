@@ -10,7 +10,8 @@ class LangDetectMRJobRunner(object):
 			outfile,
 			infiles,
 			mrJobClassParams = {'job_id': 'as'},
-			args = [],
+			#uncomment to run on local
+			#args = [],
 			jobconf={'mapred.reduce.tasks':300, 'mapred.task.timeout':86400000}
 		)
 
